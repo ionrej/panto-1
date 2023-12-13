@@ -17,15 +17,14 @@
 }
 
 header {
-  background-color: grey;
+  padding: 40px 80px;
+  background-color: #1E1E1E;
   min-width: 1280px;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .logo {
-  left: 0px;
   color: #FFF;
   font-family: gilroy-mediumuploaded_file;
   font-size: 28px;
@@ -36,12 +35,11 @@ header .logo {
   text-transform: capitalize;
 }
 header .bag {
-  right: 0px;
   height: 34px;
   width: 34px;
 }
 header .nav {
-  color: #FFF;
+  color: #rgba 255, 255, 255, 1;
   font-family: gilroy-mediumuploaded_file;
   font-size: 18px;
   font-style: normal;
@@ -66,4 +64,12 @@ header .nav .nav__content .nav__list {
   justify-content: center;
   align-items: center;
   margin-top: 0px;
+}
+.interior .container h1 {
+  color: #FFF;
+  font-family: gilroy-mediumuploaded_file;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */

@@ -24,14 +24,15 @@
   }
 
 header{
-  background-color: grey;
+  padding: 40px 80px;
+  background-color: #1E1E1E;
   min-width: 1280px;
-  margin: auto;  
   display: flex;
   justify-content: center;
   align-items: center;
+          
   .logo{
-    color: #FFF;
+color: #FFF;
 font-family: gilroy-mediumuploaded_file;
 font-size: 28px;
 font-style: normal;
@@ -39,14 +40,14 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 0.28px;
 text-transform: capitalize; 
-  }
+}
   .bag{
     height: 34px;
     width: 34px;
   }
   
   .nav{
-    color: #FFF;
+    color:#rgba(255, 255, 255, 1);
           font-family: gilroy-mediumuploaded_file;
           font-size: 18px;
           font-style: normal;
@@ -74,9 +75,15 @@ text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
-  
- 
   margin-top: 0px;
-  
-
+  .container{
+    h1{
+      color: #FFF;
+      font-family: gilroy-mediumuploaded_file;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 }

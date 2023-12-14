@@ -49,14 +49,21 @@ header .logo .logolink {
   text-transform: capitalize;
   text-decoration: none;
 }
+header .bagblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
 header .bagblock .bag {
   height: 34px;
   width: 34px;
 }
 header .bagblock .bag img:after {
   display: inline-block;
-  margin-right: 6px;
-  margin-bottom: -6px;
+  margin-left: 6px;
+  margin-top: -6px;
   width: 20px;
   height: 25px;
   border-radius: 50%;

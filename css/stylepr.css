@@ -110,6 +110,9 @@ header .nav .nav__content .nav__list .nav__list-item_drop .downclick .dropdown .
   list-style: none;
   color: #FFF;
 }
+header .ui-menu {
+  width: 150px;
+}
 
 .interior {
   background-image: url("../images/main_banner.png");
@@ -131,6 +134,7 @@ header .nav .nav__content .nav__list .nav__list-item_drop .downclick .dropdown .
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 45px;
 }
 .interior .container h1 {
   display: block;

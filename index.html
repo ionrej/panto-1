@@ -8,8 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Panto</title>
     <!-- <link rel="stylesheet" href="css/mobile.css">    -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
     <link rel="stylesheet" href="css/stylepr.css">
 </head>
 <body>
@@ -24,14 +25,37 @@
             <div class="nav__content">
               <ul class="nav__list">
                 <li class="nav__list-item_drop"><a class="nav__link" href="#">Furniture</a>
-                  <div class="downclick">
+                  <ul id="menu">
+                    
+                      <div>Playback</div>
+                      <ul>
+                        <li>
+                          <div><span class="ui-icon ui-icon-seek-start"></span>Prev</div>
+                        </li>
+                        <li>
+                          <div><span class="ui-icon ui-icon-stop"></span>Stop</div>
+                        </li>
+                        <li>
+                          <div><span class="ui-icon ui-icon-play"></span>Play</div>
+                        </li>
+                        <li>
+                          <div><span class="ui-icon ui-icon-seek-end"></span>Next</div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>Learn more about this menu</div>
+                    </li>
+                  </ul>
+
+                  <!-- <div class="downclick">
                   <ul class="dropdown">
                     <li class="drop">WWWWWWWWWWWWW</li>
                     <li class="drop">QQQQQQQQQQQQQ</li>
                     <li class="drop">TTTTTTTTTTTTT</li>
                     <li class="drop">RRRRRRRRRRRRR</li>
                   </ul>
-                </div>
+                </div> -->
                 </li>
                 <li class="nav__list-item"><a class="nav__link" href="#">Shop</a></li>
                 <li class="nav__list-item"><a class="nav__link" href="#">About Us</a></li>
@@ -75,8 +99,12 @@
 <footer>
   
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
         crossorigin="anonymous"></script>
+        
+        
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

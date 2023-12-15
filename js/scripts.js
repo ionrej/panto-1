@@ -16,6 +16,7 @@ $(document).ready(function(){
           }
       }
   });
+
 });
 
 
@@ -88,5 +89,8 @@ $(document).ready(function(){
 			$("#switch").addClass("switched");
 		}
 	});
+	$( function() {
+    $( "#menu" ).menu();
+  } );
 	
 })(jQuery); 

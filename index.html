@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Panto</title>
     <!-- <link rel="stylesheet" href="css/mobile.css">    -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/stylepr.css">
 </head>
 <body>
@@ -21,7 +23,16 @@
 		<nav class="nav">
             <div class="nav__content">
               <ul class="nav__list">
-                <li class="nav__list-item"><a class="nav__link" href="#">Furniture</a></li>
+                <li class="nav__list-item_drop"><a class="nav__link" href="#">Furniture</a>
+                  <div class="downclick">
+                  <ul class="dropdown">
+                    <li class="drop">WWWWWWWWWWWWW</li>
+                    <li class="drop">QQQQQQQQQQQQQ</li>
+                    <li class="drop">TTTTTTTTTTTTT</li>
+                    <li class="drop">RRRRRRRRRRRRR</li>
+                  </ul>
+                </div>
+                </li>
                 <li class="nav__list-item"><a class="nav__link" href="#">Shop</a></li>
                 <li class="nav__list-item"><a class="nav__link" href="#">About Us</a></li>
                 <li class="nav__list-item"><a class="nav__link" href="#">Contact</a></li>
@@ -30,7 +41,8 @@
     </nav>
     <div>
       <div class="bagblock">
-    <a class="bag" href="#">
+        <span class="counter">0</span>
+    <a class="bag" href="#">      
       <img src="images/Bag.svg" alt="Bag">
     </a>
   </div>
@@ -48,12 +60,23 @@
               Turn your room with panto into a lot more minimalist and modern with ease and speed
             </p>
           </article>
+          <form class="search_field" action="" method="">
+            
+            <input type="search" placeholder="Search furniture">
+            <button class="lope" type="submit">
+              
+                <img src="images/akar-icons_search.svg" alt="loupe">
+              
+            </button>
+          </form>
       </section>
 
     </main>
 <footer>
   
 </footer>
-<script src="js/bootstrap.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

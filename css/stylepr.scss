@@ -53,10 +53,11 @@ header{
   background-color: #1E1E1E;
   min-width: 1280px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
           
 .logo{
+  
 .logolink{
 color:#FFFFFF;
 font-family: gilroy-bolduploaded_file;
@@ -88,15 +89,15 @@ text-decoration: none;
       color: #FFFFFF;
     }
   }
-.nav{          
+.nav{  
+
     .nav__content{
       .nav__list{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin: 0 450px;        
         gap: 64px;
-        .nav__list-item {
+        .nav__list-item, .nav__list-item_drop {
           list-style: none;
           
           .nav__link{
@@ -111,38 +112,11 @@ text-decoration: none;
 
           }
         }
-        .nav__list-item_drop{
-          list-style: none;
-          position: relative;
-          .nav__link{
-            color: #FFF;
-            font-family: gilroy-mediumuploaded_file;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-decoration: none;
-            
-  
-            }
-            .downclick{
-          .dropdown{            
-            display: block;
-            position: absolute;
-            top: 40px;
-            background-color: red;
-            z-index: 10;
-              .drop{
-                list-style: none;
-                color: #FFF;
-              }
-          }
-        }
-        }
+        
       }
     }
   }
-  .ui-menu { width: 150px; }
+  
 }
 
 .interior{

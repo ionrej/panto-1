@@ -35,7 +35,7 @@ header {
   background-color: #1E1E1E;
   min-width: 1280px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 header .logo .logolink {
@@ -69,15 +69,14 @@ header .bagblock .counter {
 }
 header .nav .nav__content .nav__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 450px;
   gap: 64px;
 }
-header .nav .nav__content .nav__list .nav__list-item {
+header .nav .nav__content .nav__list .nav__list-item, header .nav .nav__content .nav__list .nav__list-item_drop {
   list-style: none;
 }
-header .nav .nav__content .nav__list .nav__list-item .nav__link {
+header .nav .nav__content .nav__list .nav__list-item .nav__link, header .nav .nav__content .nav__list .nav__list-item_drop .nav__link {
   color: #FFF;
   font-family: gilroy-mediumuploaded_file;
   font-size: 18px;
@@ -85,33 +84,6 @@ header .nav .nav__content .nav__list .nav__list-item .nav__link {
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
-}
-header .nav .nav__content .nav__list .nav__list-item_drop {
-  list-style: none;
-  position: relative;
-}
-header .nav .nav__content .nav__list .nav__list-item_drop .nav__link {
-  color: #FFF;
-  font-family: gilroy-mediumuploaded_file;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-header .nav .nav__content .nav__list .nav__list-item_drop .downclick .dropdown {
-  display: block;
-  position: absolute;
-  top: 40px;
-  background-color: red;
-  z-index: 10;
-}
-header .nav .nav__content .nav__list .nav__list-item_drop .downclick .dropdown .drop {
-  list-style: none;
-  color: #FFF;
-}
-header .ui-menu {
-  width: 150px;
 }
 
 .interior {

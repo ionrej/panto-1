@@ -31,11 +31,10 @@
 }
 
 header {
-  padding: 40px 80px;
-  background-color: #1E1E1E;
-  min-width: 1280px;
   display: flex;
   justify-content: space-between;
+  padding: 40px 80px;
+  background-color: #1E1E1E;
   align-items: center;
 }
 header .logo .logolink {
@@ -67,16 +66,16 @@ header .bagblock .counter {
   background-color: orange;
   color: #FFFFFF;
 }
-header .nav .nav__content .nav__list {
+header .nav .nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 64px;
 }
-header .nav .nav__content .nav__list .nav__list-item, header .nav .nav__content .nav__list .nav__list-item_drop {
+header .nav .nav__list .nav__list-item {
   list-style: none;
 }
-header .nav .nav__content .nav__list .nav__list-item .nav__link, header .nav .nav__content .nav__list .nav__list-item_drop .nav__link {
+header .nav .nav__list .nav__list-item .nav__link {
   color: #FFF;
   font-family: gilroy-mediumuploaded_file;
   font-size: 18px;
@@ -84,6 +83,45 @@ header .nav .nav__content .nav__list .nav__list-item .nav__link, header .nav .na
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+}
+header .nav .nav__list .drop {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav .nav__list .drop:after {
+  display: flex;
+  align-content: center;
+  content: url("../images/eva_arrow-ios-back-outline.svg");
+  margin-left: 8px;
+  color: #FFF;
+}
+header .nav .nav__list .drop:hover .dropdown {
+  opacity: 1;
+}
+header .nav .nav__list .drop a {
+  color: #FFF;
+  font-family: gilroy-mediumuploaded_file;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+header .nav .nav__list .drop .dropdown {
+  display: block;
+  position: absolute;
+  top: 25px;
+  background-color: rgb(57, 54, 54);
+  z-index: 10;
+  opacity: 0;
+  transition: 0.3s;
+}
+header .nav .nav__list .drop .dropdown li {
+  color: #FFF;
+  list-style: none;
 }
 
 .interior {
@@ -164,4 +202,15 @@ header .nav .nav__content .nav__list .nav__list-item .nav__link, header .nav .na
   border-radius: 50%;
   border-color: transparent;
   background-color: #E58411;
+}
+
+.choosing .container {
+  padding: 120px 80px 120px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+.choosing .container .why {
+  min-width: 129px;
+  margin-right: 65px;
 }/*# sourceMappingURL=stylepr.css.map */

@@ -13,7 +13,7 @@ $(document).ready(function(){
           },
           1280:{
               items:4
-          }
+          },
       }
   });
 

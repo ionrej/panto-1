@@ -32,12 +32,23 @@
 
 header {
   display: flex;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 5;
+  min-width: 1280px;
+  margin: auto;
+}
+header .hdr_content {
+  min-width: 1280px;
+  margin: auto;
+  display: flex;
+  padding-inline: 80px;
   justify-content: space-between;
-  padding: 40px 80px;
-  background-color: #1E1E1E;
   align-items: center;
 }
-header .logo .logolink {
+header .hdr_content .logo .logolink {
   color: #FFFFFF;
   font-family: gilroy-bolduploaded_file;
   font-size: 28px;
@@ -48,10 +59,10 @@ header .logo .logolink {
   text-transform: capitalize;
   text-decoration: none;
 }
-header .bagblock {
+header .hdr_content .bagblock {
   position: relative;
 }
-header .bagblock .counter {
+header .hdr_content .bagblock .counter {
   position: absolute;
   display: inline-flex;
   justify-content: center;
@@ -66,16 +77,16 @@ header .bagblock .counter {
   background-color: orange;
   color: #FFFFFF;
 }
-header .nav .nav__list {
+header .hdr_content .nav .nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 64px;
 }
-header .nav .nav__list .nav__list-item {
+header .hdr_content .nav .nav__list .nav__list-item {
   list-style: none;
 }
-header .nav .nav__list .nav__list-item .nav__link {
+header .hdr_content .nav .nav__list .nav__list-item .nav__link {
   color: #FFF;
   font-family: gilroy-mediumuploaded_file;
   font-size: 18px;
@@ -84,24 +95,24 @@ header .nav .nav__list .nav__list-item .nav__link {
   line-height: normal;
   text-decoration: none;
 }
-header .nav .nav__list .drop {
+header .hdr_content .nav .nav__list .drop {
   list-style: none;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .nav .nav__list .drop:after {
+header .hdr_content .nav .nav__list .drop:after {
   display: flex;
   align-content: center;
   content: url("../images/eva_arrow-ios-back-outline.svg");
   margin-left: 8px;
   color: #FFF;
 }
-header .nav .nav__list .drop:hover .dropdown {
+header .hdr_content .nav .nav__list .drop:hover .dropdown {
   opacity: 1;
 }
-header .nav .nav__list .drop a {
+header .hdr_content .nav .nav__list .drop a {
   color: #FFF;
   font-family: gilroy-mediumuploaded_file;
   font-size: 18px;
@@ -110,7 +121,7 @@ header .nav .nav__list .drop a {
   line-height: normal;
   text-decoration: none;
 }
-header .nav .nav__list .drop .dropdown {
+header .hdr_content .nav .nav__list .drop .dropdown {
   display: block;
   position: absolute;
   top: 25px;
@@ -119,7 +130,7 @@ header .nav .nav__list .drop .dropdown {
   opacity: 0;
   transition: 0.3s;
 }
-header .nav .nav__list .drop .dropdown li {
+header .hdr_content .nav .nav__list .drop .dropdown li {
   color: #FFF;
   list-style: none;
 }
@@ -137,9 +148,9 @@ header .nav .nav__list .drop .dropdown li {
   padding-top: 92px;
 }
 .interior .container {
+  margin-top: 92px;
   max-width: 861px;
   text-align: center;
-  margin: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,12 +216,128 @@ header .nav .nav__list .drop .dropdown li {
 }
 
 .choosing .container {
-  padding: 120px 80px 120px 80px;
+  padding: 120px 0px;
   display: flex;
   justify-content: space-between;
   gap: 28px;
 }
+.choosing .container article {
+  min-width: 284px;
+}
+.choosing .container article h2 {
+  color: #1E1E1E;
+  font-family: gilroy-bolduploaded_file;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.choosing .container article h2 {
+  color: #1E1E1E;
+  font-family: gilroy-bolduploaded_file;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.choosing .container article h3 {
+  color: #1E1E1E;
+  font-family: gilroy-bolduploaded_file;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.choosing .container article p {
+  color: #1E1E1E;
+  font-family: gilroy-regularuploaded_file;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 185%;
+}
+.choosing .container article a {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: #E58411;
+  font-family: gilroy-mediumuploaded_file;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 185%;
+}
 .choosing .container .why {
-  min-width: 129px;
-  margin-right: 65px;
+  min-width: 242px;
+  margin-right: 102px;
+}
+
+.product {
+  text-align: center;
+  color: #1E1E1E;
+  font-family: gilroy-bolduploaded_file;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product .product_content .icons-block {
+  display: flex;
+}
+.product .product_content .icons-block a {
+  display: block;
+  box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
+  max-width: 268px;
+  gap: 42px;
+}
+.product .product_content .icons-block a .owl-stage-outer .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.product .product_content .icons-block .owl-nav .owl-prev {
+  background-image: url("../images/left.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  border-radius: 26.087px;
+  box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
+}
+.product .product_content .icons-block .owl-nav .owl-prev :after {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  content: "";
+  font-size: 25px;
+  color: rgb(239, 8, 8);
+  font-weight: 1000;
+}
+.product .product_content .icons-block .owl-nav .owl-next {
+  background-image: url("../images/right.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: 50%;
+  border-radius: 26.087px;
+  box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+}
+.product .product_content .icons-block .owl-nav .owl-next :after {
+  display: inline-flex;
+  content: ">";
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
 }/*# sourceMappingURL=stylepr.css.map */
